@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Jurusan - Otomotif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            /* Background halaman warna abu-abu muda */
+            background-color: #f1f3f5; 
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar custom */
+        .navbar-custom {
+            background-color: #212529; /* Dark grey/black */
+        }
+
+        /* Hero Section dengan gradien Dark Grey */
+        .hero-detail {
+            background: linear-gradient(rgba(52, 58, 64, 0.5), rgba(33, 37, 41, 0.5)),
+                        url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200') center/cover no-repeat;
+            color: white;
+            padding: 100px 0 80px;
+        }
+
+        /* Kolom/Card dengan warna abu-abu */
+        .card-custom {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            /* Warna kolom abu-abu */
+            background-color: #e9ecef !important; 
+        }
+
+        /* Warna Custom Tema Grey untuk Badge, Tombol, dan Progress Bar */
+        .bg-grey-theme {
+            background-color: #495057 !important;
+            color: white !important;
+        }
+        
+        .text-grey-theme {
+            color: #212529 !important;
+        }
+
+        .btn-grey-theme {
+            background-color: #343a40;
+            color: white;
+            border: none;
+        }
+        .btn-grey-theme:hover {
+            background-color: #212529;
+            color: white;
+        }
+
+        .btn-outline-grey {
+            border: 1px solid #343a40;
+            color: #343a40;
+            background-color: transparent;
+        }
+        .btn-outline-grey:hover {
+            background-color: #343a40;
+            color: white;
+        }
+
+        /* Ikon Fitur */
+        .feature-icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: #dee2e6; /* Abu-abu lebih terang */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #212529;
+            flex-shrink: 0;
+        }
+
+        .card-header-dark {
+            background-color: #212529; 
+            color: white;
+            border-radius: 12px 12px 0 0 !important;
+            padding: 15px;
+        }
+
+        .list-group-item-custom {
+            border-left: none;
+            border-right: none;
+            padding: 15px 0;
+            background: transparent;
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+        .list-group-item-custom:first-child { border-top: none; }
+        .list-group-item-custom:last-child { border-bottom: none; }
+        
+        .testimonial-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-lg-5 px-3">
+        <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="index.html">
+            <img src="logosekolah.png" alt="Logo" width="35" height="35" class="me-2 rounded-circle bg-white p-1" onerror="this.src='https://ui-avatars.com/api/?name=NC&background=0D8ABC&color=fff'">
+            Naparima Collage High School
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="Tugas2.html#beranda">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="Tugas2.html#visi-misi">Visi Misi</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="Tugas2.html#data-siswa">Data Siswa</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white active" href="#" id="jurusanDropdown" role="button" data-bs-toggle="dropdown">
+                        Jurusan
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="pplg.html">PPLG</a></li>
+                        <li><a class="dropdown-item" href="tjkt.html">TJKT</a></li>
+                        <li><a class="dropdown-item" href="kuliner.html">Kuliner</a></li>
+                        <li><a class="dropdown-item" href="busana.html">Busana</a></li>
+                        <li><a class="dropdown-item active" href="otomotif.html">Otomotif</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero-detail text-center">
+    <div class="container">
+        <h1 class="display-5 fw-bold mb-3" style="letter-spacing: 1px;">TEKNIK KENDARAAN RINGAN (OTOMOTIF)</h1>
+        <p class="lead mx-auto" style="max-width: 900px; font-size: 1.1rem; opacity: 0.9;">
+            Jurusan yang membekali peserta didik dengan pengetahuan, keterampilan, dan sikap profesional dalam perawatan, perbaikan, dan manajemen sistem kendaraan bermotor.
+        </p>
+    </div>
+</section>
+
+<div class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-lg-8">
+            <div class="card card-custom p-4 p-md-5 h-100">
+                <h3 class="fw-bold mb-4 text-grey-theme">Menguasai Teknologi Otomotif Terkini</h3>
+                <p class="text-dark mb-5" style="line-height: 1.7; font-weight: 500;">
+                    Program Keahlian Teknik Kendaraan Ringan (Otomotif) mendidik siswa menjadi mekanik andal dan teknisi ahli yang siap kerja. Siswa mempelajari cara melakukan <em>overhaul</em> mesin, pemeliharaan sasis dan pemindah tenaga, diagnosa kelistrikan mobil, hingga penanganan sistem injeksi (EFI) modern. Lulusan jurusan ini dipersiapkan untuk terserap di industri otomotif, dealer bengkel resmi, maupun menjadi wirausahawan bengkel mandiri.
+                </p>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 d-flex gap-3">
+                        <div class="feature-icon-box">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 text-grey-theme">Engine Maintenance</h6>
+                            <p class="small text-dark mb-0">Perawatan dan perbaikan mesin kendaraan ringan, pengujian emisi, dan analisis kerusakan sistem mekanikal.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex gap-3">
+                        <div class="feature-icon-box">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 text-grey-theme">Electrical & Injection System</h6>
+                            <p class="small text-dark mb-0">Diagnosa kelistrikan bodi, sistem AC mobil, serta penanganan sistem kontrol elektronik (EFI/VVT-i).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="text-dark opacity-25 mb-4">
+
+                <h5 class="fw-bold mb-3 text-grey-theme">Fasilitas Unggulan</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-custom d-flex justify-content-between align-items-center text-dark fw-medium">
+                        Bengkel Praktik Utama
+                        <span class="badge bg-grey-theme rounded-pill px-3 py-2">1 Unit Produksi</span>
+                    </li>
+                    <li class="list-group-item list-group-item-custom d-flex justify-content-between align-items-center text-dark fw-medium">
+                        Peralatan Diagnostik (Scanner EFI)
+                        <span class="badge bg-grey-theme rounded-pill px-3 py-2">Standar Dealer</span>
+                    </li>
+                    <li class="list-group-item list-group-item-custom d-flex justify-content-between align-items-center text-dark fw-medium">
+                        Sertifikasi Kompetensi
+                        <span class="badge bg-grey-theme rounded-pill px-3 py-2">Lembaga Industri</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            
+            <div class="card card-custom mb-4">
+                <div class="card-header card-header-dark text-center">
+                    <h6 class="fw-bold mb-0">Status Pendaftaran</h6>
+                </div>
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between small fw-bold mb-2 text-dark">
+                        <span>Kuota Terisi (130/130)</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="progress mb-4" style="height: 10px; border-radius: 5px; background-color: #ced4da;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-grey-theme" style="width: 100%"></div>
+                    </div>
+                    
+                    <button class="btn btn-secondary w-100 mb-3 fw-bold py-2" disabled>KUOTA PENUH</button>
+                    <a href="Tugas2.html" class="btn btn-outline-grey w-100 py-2">&larr; Kembali</a>
+                </div>
+            </div>
+
+            <div class="card card-custom">
+                <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=500" class="testimonial-img" alt="Otomotif Student">
+                <div class="card-body p-4 text-center">
+                    <p class="small text-dark mb-3 fw-medium" style="line-height: 1.6;">
+                        "Praktik dengan mobil sungguhan dan alat scanner injeksi terbaru membuat saya mudah beradaptasi dan langsung diangkat kerja saat magang di bengkel resmi."
+                    </p>
+                    <h6 class="small fw-bold mb-0 text-grey-theme">- Dimas, Alumni 2023</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+        <p class="mb-0 small" style="color: #adb5bd;">&copy; 2026 Naparima High School. Seluruh Hak Cipta Dilindungi.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
